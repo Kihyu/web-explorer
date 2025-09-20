@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Web Graph Explorer</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Cytoscape.js CDN -->
+  <script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
+</head>
+<body>
+  <h1>Web Graph Explorer</h1>
+
+  <!-- Import and Export JSON-->
+  <input type="file" id="importGraph" accept=".json" />
+  <button onclick="downloadGraph(currentGraph)">Download Graph</button>
+
+  <div id="input-area">
+    <input type="text" id="urlInput" placeholder="Gib eine URL ein (z.B. https://apple.com)">
+    <button id="crawlBtn">Crawl</button>
+  </div>
+
+  <div id="results">
+    <!-- Here are the links -->
+  </div>
+
+    <div id="container">
+        <div id="graph"></div>
+        <div id="details"><h1>Details:</h1></div>
+    </div>
+
+    <!-- script.js -->
+    <script src="script.js"></script>
+
+  <h5>Details may be shown in German. Will be fixed soon.<br>Thanks for your understanding.</h5>
+</body>
+</html>
